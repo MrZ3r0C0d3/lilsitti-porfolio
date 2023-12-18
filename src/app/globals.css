@@ -24,9 +24,9 @@
   src: url('../../public/fonts/BodoniModa-Italic-VariableFont_opsz,wght.ttf') format('woff2');
 }
 
-*{
+/* *{
   border: 1px solid red;
-}
+} */
 
 body {
   background: rgb(var(--background)) ;
