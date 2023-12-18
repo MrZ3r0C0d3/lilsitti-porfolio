@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
 :root {
   --background: 234, 226, 215;
 }
@@ -16,6 +16,35 @@
   }
 } */
 
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../public/fonts/BodoniModa-Italic-VariableFont_opsz,wght.ttf') format('woff2');
+}
+
+*{
+  border: 1px solid red;
+}
+
 body {
   background: rgb(var(--background)) ;
+}
+
+h1{
+  @apply text-[72px] font-medium leading-[1] uppercase
+}
+h2{
+  @apply text-[64px] font-normal uppercase leading-[1]
+}
+p{
+  @apply text-[48px] font-light leading-[1.1]
+}
+
+.bodoni-moda-italic-uppercase {
+  font-family: 'Bodoni Moda', comic sans ms;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
 }
