@@ -48,3 +48,25 @@ p{
   font-weight: 400;
   text-transform: uppercase;
 }
+
+#hand_right{
+  animation: rotate 1s infinite;
+}
+
+.programmingsvg,
+.cookingsvg{
+  @apply max-h-[590px] w-auto mx-auto bg-[#EAE2D7];
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

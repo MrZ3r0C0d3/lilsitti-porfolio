@@ -1,8 +1,7 @@
 import React from "react";
-import programmingSvg from '../../../public/programming.svg';
-import cookingSvg from '../../../public/programming.svg';
-import Image from "next/image";
-import { ReactCompareSlider, ReactCompareSliderImage, ReactCompareSliderHandle } from 'react-compare-slider';
+import ProgrammingSVG from "../../../public/programming";
+import CookingSVG from "../../../public/cooking";
+import { ReactCompareSlider, ReactCompareSliderHandle } from 'react-compare-slider';
 
 export default function HomeHobbyImgAnimation() {
     return(
@@ -25,8 +24,9 @@ export default function HomeHobbyImgAnimation() {
                     }}
                     />}
                 
-            itemOne={<ReactCompareSliderImage src="/programming.svg" alt="Image one" style={{maxHeight: '590px', width: 'auto', marginLeft: 'auto', marginRight: 'auto', backgroundColor: '#EAE2D7'}} />}
-            itemTwo={<ReactCompareSliderImage src="/cooking.svg" alt="Image two" style={{maxHeight: '590px', width: 'auto', marginLeft: 'auto', marginRight: 'auto', backgroundColor: '#EAE2D7'}} />}
+            itemOne={<ProgrammingSVG/>}
+            itemTwo={<CookingSVG/>}
+
             />
         </div>
         
