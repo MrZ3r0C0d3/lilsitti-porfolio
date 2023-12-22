@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
 :root {
   --background: 234, 226, 215;
@@ -33,13 +33,13 @@ body {
 }
 
 h1{
-  @apply text-[72px] font-medium leading-[1] uppercase
+  @apply text-[72px] font-medium leading-[1] uppercase below-tablet:text-[32px]
 }
 h2{
-  @apply text-[64px] font-normal uppercase leading-[1]
+  @apply text-[64px] font-normal uppercase leading-[1] below-tablet:text-[28px]
 }
 p{
-  @apply text-[48px] font-light leading-[1.1]
+  @apply text-[48px] font-light leading-[1.1] below-tablet:text-[24px]
 }
 
 .bodoni-moda-italic-uppercase {
@@ -47,4 +47,57 @@ p{
   font-style: italic;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+#hand_right{
+  animation: rotate 1s infinite;
+}
+
+.programmingsvg,
+.cookingsvg{
+  @apply max-h-[590px] w-[100%] mx-auto bg-[#EAE2D7] below-tablet:max-h-[200px];
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#burger_icon{
+
+  :hover{
+    cursor: pointer;
+  }
+
+  #top_part:hover{
+    fill: #F4C064;
+  }
+  #bottom_part:hover{
+    fill: #F4C064;
+  }
+
+  #mid_part:hover{
+    #patty{
+      fill: #99774F;
+    }
+    #tomato{
+      fill: #FF603E;
+    }
+    #cheese{
+      fill: #FFE954;
+    }
+    #salade{
+      fill: #91F18B;
+    }
+  }
+  
+
 }
