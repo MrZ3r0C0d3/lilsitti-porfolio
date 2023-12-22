@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Frontend from './FrontendBurger';
 import ToolsBurger from './ToolsBurger';
+import BackendBurger from './BackendBurger';
+import ClickMeBurger from './ClickMeBurger';
 
 export default function Burger() {
 
 	const [techStack, setTechStack] = useState<React.ReactNode>(null);;
+	const [burgerStackName, setBurgerStackName] = useState<string>('');
 	
 	const [fillColors, setFillColors] = useState({
 		top: '#EAE2D7',
@@ -25,6 +28,7 @@ export default function Burger() {
 			patty: '#EAE2D7',
 		});
 		setTechStack(<Frontend />);
+		setBurgerStackName('Frontend');
 	};
 
 	const handleBottomClick = () => {
@@ -36,7 +40,8 @@ export default function Burger() {
 			cheese: '#EAE2D7',
 			patty: '#EAE2D7',
 		});
-		setTechStack(null);
+		setTechStack(<BackendBurger />);
+		setBurgerStackName('Backend');
 	};
 
 	const handleMiddleClick = () => {
@@ -49,11 +54,13 @@ export default function Burger() {
 			patty: '#99774F',
 		});
 		setTechStack(<ToolsBurger />);
+		setBurgerStackName('Tools');
 	};
 
 	return (
-		<div className='flex flex-col my-20'>
-			
+		<div className='flex flex-col my-12'>
+			<h3 className='bodoni-moda-italic-uppercase mx-auto mb-8 below-tablet:text-[24px] text-[36px]'>{burgerStackName}</h3>
+			{techStack ? null : <ClickMeBurger />}
 			<svg className="z-[9999] mx-auto max-h-[300px] w-[80%] below-tablet:max-h-[150px]" viewBox="0 0 376 366" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="burger_icon">
 					<g id="bottom_part" onClick={handleBottomClick} fill={fillColors.bottom}>
