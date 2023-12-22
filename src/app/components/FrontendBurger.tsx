@@ -3,7 +3,7 @@ import React from 'react';
 export default function Frontend(){
 
 	return(
-		<svg className='absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-90%] flex justify-center items-center mx-auto max-h-[330px] w-auto' width="1084" height="647" viewBox="0 0 1084 647" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg className='absolute left-[50%] top-[50%] translate-x-[-51%] translate-y-[-90%] flex justify-center items-center mx-auto max-h-[330px] below-tablet:max-h-[180px] w-auto' width="1084" height="647" viewBox="0 0 1084 647" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="frontend_burger">
 				<g id="11">
 					<g id="Clip path group">

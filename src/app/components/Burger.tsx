@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Frontend from './FrontendBurger';
+import ToolsBurger from './ToolsBurger';
 
 export default function Burger() {
 
@@ -47,13 +48,13 @@ export default function Burger() {
 			cheese: '#FFE954',
 			patty: '#99774F',
 		});
-		setTechStack(null);
+		setTechStack(<ToolsBurger />);
 	};
 
 	return (
 		<div className='flex flex-col my-20'>
 			
-			<svg className="z-[9999] mx-auto max-h-[300px] w-auto" viewBox="0 0 376 366" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg className="z-[9999] mx-auto max-h-[300px] w-[80%] below-tablet:max-h-[150px]" viewBox="0 0 376 366" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="burger_icon">
 					<g id="bottom_part" onClick={handleBottomClick} fill={fillColors.bottom}>
 						<path id="Rectangle 1" d="M6 292H370V306C370 337.48 344.48 363 313 363H63C31.5198 363 6 337.48 6 306V292Z" stroke="black" strokeWidth="6"/>
@@ -79,7 +80,7 @@ export default function Burger() {
 				</g>
 				
 			</svg>
-			<div className='relative'>
+			<div className='relative max-h-[300px] h-[100%] w-auto'>
 				{techStack}
 			</div>
 			

@@ -5,7 +5,7 @@ import { ReactCompareSlider, ReactCompareSliderHandle } from 'react-compare-slid
 
 export default function HomeHobbyImgAnimation() {
 	return(
-		<div className="my-12 max-h-[590px]" >
+		<div className="my-12 max-h-[590px] below-tablet:max-h-[200px]" >
 			<ReactCompareSlider 
 				style={{
 					display: 'flex', 

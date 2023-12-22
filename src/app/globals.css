@@ -33,13 +33,13 @@ body {
 }
 
 h1{
-  @apply text-[72px] font-medium leading-[1] uppercase
+  @apply text-[72px] font-medium leading-[1] uppercase below-tablet:text-[32px]
 }
 h2{
-  @apply text-[64px] font-normal uppercase leading-[1]
+  @apply text-[64px] font-normal uppercase leading-[1] below-tablet:text-[28px]
 }
 p{
-  @apply text-[48px] font-light leading-[1.1]
+  @apply text-[48px] font-light leading-[1.1] below-tablet:text-[24px]
 }
 
 .bodoni-moda-italic-uppercase {
@@ -55,7 +55,7 @@ p{
 
 .programmingsvg,
 .cookingsvg{
-  @apply max-h-[590px] w-[100%] mx-auto bg-[#EAE2D7];
+  @apply max-h-[590px] w-[100%] mx-auto bg-[#EAE2D7] below-tablet:max-h-[200px];
 
 }
 
@@ -76,7 +76,6 @@ p{
   :hover{
     cursor: pointer;
   }
-
 
   #top_part:hover{
     fill: #F4C064;
