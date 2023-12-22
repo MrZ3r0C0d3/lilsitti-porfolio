@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import HomeHobbyImgAnimation from './HomeHobbyImgAnimation';
-import Burger from '../../../public/burger';
+import Burger from './Burger';
 
 export default function HomeAboutMe(){
 	return(
