@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
 :root {
   --background: 234, 226, 215;
@@ -55,7 +55,7 @@ p{
 
 .programmingsvg,
 .cookingsvg{
-  @apply max-h-[590px] w-auto mx-auto bg-[#EAE2D7];
+  @apply max-h-[590px] w-[100%] mx-auto bg-[#EAE2D7];
 
 }
 
@@ -69,4 +69,36 @@ p{
   100% {
     transform: rotate(0deg);
   }
+}
+
+#burger_icon{
+
+  :hover{
+    cursor: pointer;
+  }
+
+
+  #top_part:hover{
+    fill: #F4C064;
+  }
+  #bottom_part:hover{
+    fill: #F4C064;
+  }
+
+  #mid_part:hover{
+    #patty{
+      fill: #99774F;
+    }
+    #tomato{
+      fill: #FF603E;
+    }
+    #cheese{
+      fill: #FFE954;
+    }
+    #salade{
+      fill: #91F18B;
+    }
+  }
+  
+
 }

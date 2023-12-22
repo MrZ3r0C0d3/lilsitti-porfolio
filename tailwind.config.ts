@@ -16,5 +16,14 @@ const config: Config = {
     },
   },
   plugins: [],
+  rules: [
+    {
+      test: /\.css$/,
+      use: [
+        'css-loader',
+        'postcss-loader',
+      ],
+    },
+  ]
 }
 export default config
