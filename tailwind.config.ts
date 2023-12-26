@@ -9,7 +9,7 @@ const config: Config = {
 	theme: {
 		screens: {
 			'below-tablet' : {'max':'768px'},
-			'below-desktop' : {'max':'1024px'},
+			'below-desktop' : {'max':'1024px', 'min':'769px'},
 		},
 	},
 	plugins: [],

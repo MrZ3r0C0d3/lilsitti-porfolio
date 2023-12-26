@@ -1,7 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&display=swap');
 :root {
   --background: 234, 226, 215;
 }
@@ -15,6 +15,10 @@
     --background-end-rgb: 0, 0, 0;
   }
 } */
+
+html, body {
+  overflow-x: hidden !important;
+}
 
 @font-face {
   font-family: 'Bodoni Moda';
@@ -47,6 +51,11 @@ p{
   font-style: italic;
   font-weight: 400;
   text-transform: uppercase;
+}
+.bodoni-moda{
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 400;
 }
 
 #hand_right{
@@ -98,6 +107,13 @@ p{
       fill: #91F18B;
     }
   }
-  
 
+}
+
+.project-image-container {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image-container:hover {
+  transform: scale(1.05);
 }
