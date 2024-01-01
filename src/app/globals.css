@@ -117,3 +117,27 @@ p{
 .project-image-container:hover {
   transform: scale(1.05);
 }
+
+.home-introduction-section{
+  height: 80vh;
+  
+}
+
+.home-introduction-img-content{
+  height: 80vh;
+  width: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(-1);
+}
+
+.home-introduction-img{
+  background: url(/TestImg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+}
